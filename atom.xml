@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Chris-lld.github.io</id>
     <title>Myblog</title>
-    <updated>2022-05-16T05:21:44.323Z</updated>
+    <updated>2022-05-29T06:32:20.363Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Chris-lld.github.io"/>
     <link rel="self" href="https://Chris-lld.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://Chris-lld.github.io/images/avatar.png</logo>
     <icon>https://Chris-lld.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Myblog</rights>
+    <entry>
+        <title type="html"><![CDATA[Android、Java上判断两个String是否相等]]></title>
+        <id>https://Chris-lld.github.io/post/androidjava-shang-pan-duan-liang-ge-string-shi-fou-xiang-deng/</id>
+        <link href="https://Chris-lld.github.io/post/androidjava-shang-pan-duan-liang-ge-string-shi-fou-xiang-deng/">
+        </link>
+        <updated>2022-05-29T06:29:44.000Z</updated>
+        <content type="html"><![CDATA[<p>应该用str1.equals(str2)来判断，不能用==或者！=来判断，原因：</p>
+<p>因为String是引用类型的，不是基本数据类型，所以它们的比较是使用地址和值(相当于C中的指针)来比较的，因为它们是不同的对象，有不同的地址，所以str1!=str2永远都是true。而str1<mark>str2永远是false。如果你中想比较它们的数值是否相等就使用str1.equals(str2)。使用</mark>或者!=是对象的比较，它们为真的条件是：不仅要求是同一对象，而值也要求相等。</p>
+<p>equals的意思是&quot;&quot;跟equals后面括弧里的东西进行对比，如果一样就为空。括弧里的就是实际输入的东西</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[测试]]></title>
         <id>https://Chris-lld.github.io/post/ce-shi/</id>
